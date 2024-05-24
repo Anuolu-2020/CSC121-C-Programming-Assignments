@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// How to program C Excerise 3.21
 int main(void) {
   int variable = 3;
 

@@ -1,6 +1,7 @@
 #include <math.h>
 #include <stdio.h>
 
+// How to program C Excercise 3.22
 void checkPrime(int number) {
   if (number < 0) {
     puts("Number must be a positive integer");
