@@ -1,4 +1,3 @@
-#include <math.h>
 #include <stdio.h>
 
 // How to program C Excercise 3.22
@@ -15,11 +14,9 @@ void checkPrime(int number) {
     return;
   }
 
-  double result = sqrt(number);
+  for (int i = 5; i * i <= number; i += 6) {
 
-  for (int i = 2; i < (int)result; i++) {
-
-    if (number % (int)result == 0) {
+    if (number % i == 0 || number % (i + 2) == 0) {
       printf("%i is not a prime number\n", number);
       return;
     }
@@ -42,7 +39,7 @@ int main(void) {
 
   int arrayOfNumbers[] = {2,  3,  5,  7,  11, 13, 17, 19, 23, 29,
                           31, 37, 41, 43, 47, 53, 59, 61, 67, 71,
-                          73, 79, 83, 89, 97, 15, 12, 14, 16};
+                          73, 79, 83, 89, 97, 15, 12, 14, 16, 95};
 
   int len = sizeof(arrayOfNumbers) / sizeof(int);
 
