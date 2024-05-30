@@ -1,6 +1,7 @@
 #include <math.h>
 #include <stdio.h>
 
+// How to program C Excercise 5.16
 double areaOfTriangle(double side1, double side2, double side3) {
   if ((side1 + side2) < side3) {
     puts("The sum of Side 1 and Side 2 must be greater than Side 3!");
